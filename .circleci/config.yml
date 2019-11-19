@@ -29,7 +29,7 @@ jobs:
 
       - run:
           name: install dependencies
-          command: |  k
+          command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
@@ -53,5 +53,3 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
-
-          
